@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+.navlist{
+    width: 100%;
+    padding: 80px,80%;
+    position: fixed;
+    background-color: black;
+}
+.navlist ul {
+    display: flex;
+    list-style-type:  none;
+}
+.navlist ul li:first-child {
+    flex:1;
+    color: #ffffff;
+    font-size: 20px;
+}
+.navlist  ul  h4{
+ font-family: serif;
+
+}
+.navlist ul a{
+    display:block;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: azure;
+    text-decoration: none;
+}
+.navlist ul a:hover{
+    color: #ff8800;
+}

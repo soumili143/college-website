@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.navlist{
+    width: 100%;
+    padding: 80px,80%;
+    position: fixed;
+    background-color: black;
+}
+.navlist ul {
+    display: flex;
+    list-style-type:  none;
+}
+.navlist ul li:first-child {
+    flex:1;
+    color: #ffffff;
+    font-size: 20px;
+}
+.navlist  ul  h4{
+ font-family: serif;
+
+}
+.navlist ul a{
+    display:block;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: azure;
+    text-decoration: none;
+}
+.navlist ul a:hover{
+    color: #ff8800;
+}
+
+.main-box{
+    width: 100%;
+    height:80vh;
+    padding-top: 30vh;
+    text-align: center;
+    color:rgb(10, 10, 10);
+    padding-top: 30vh;
+}
+.main-box h1{
+    font-family: serif;
+    margin-bottom: 15px;
+    word-spacing: 8px;
+}
+.main-box p{
+    margin-bottom: 14px;
+    letter-spacing: 1.4px;
+    margin-bottom: 40px;
+}
+.main-box button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #ff8800;
+    color: #ffffff;
+ }
+ .main-box  button:hover{
+     background: #ff8800;
+ }
+.container{
+    width: 80%;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.container h2{
+    color:hsl(7, 97%, 49%);
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+.container h2::before,.container h2::after{
+    content: "----------";
+    letter-spacing: -5px;
+    font-weight: lighter;
+    margin: 0 20px 0 10px;
+}
+.container.row{
+    display: flex;
+    justify-content:space-evenly;
+}
+.container .column{
+    width:32% ;
+    height:auto;
+    position:relative;
+    overflow:hidden;
+}
+.container img{
+    width: 100%;    
+    height: auto;
+}
+.container.column a:last-child{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    top: 99%;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ff8800c0;
+    text-align: center;
+    padding-top: 14vw;
+    font-size: 3vw;
+    color: #ffffff;
+    text-decoration: none;
+ }
+.container.column :hover a:last-child{
+    height: 100%;
+    top:0;
+}
